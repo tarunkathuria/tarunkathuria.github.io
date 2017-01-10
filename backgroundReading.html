@@ -96,16 +96,18 @@
                                 </li>
                                 <li><a href="projects.html"><i class="fa fa-pencil" ></i> Academic Projects </a> 
                                 </li>
-                                <li><a><i class="fa fa-book"></i> Academic References <span class="fa fa-chevron-down"></span></a>
+                                <li class="current-page"><a href="backgroundReading.html"><i class="fa fa-pencil" ></i> References for ML, Optimization and Theory </a> 
+                                </li>
+                                <!-- <li><a><i class="fa fa-book"></i> Academic References <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu" style="display: none">
                                         <li><a href="MLONewStuff.html">New Developments in ML & Opt</a>
                                         </li>
                                         <li class="current-page"><a>Background Material</a>
                                         </li>
                                     </ul>
-                                </li>
-                                <li ><a href="progLang.html"><i class="fa fa-terminal" ></i> Programming Languages</a> 
-                                </li>
+                                </li> -->
+                                <!-- <li ><a href="progLang.html"><i class="fa fa-terminal" ></i> Programming Languages</a>  -->
+                                <!-- </li> -->
                                 <li ><a href="contact.html"><i class="fa fa-phone-square" ></i> Contact </a> 
                                 </li>
                                 
@@ -348,9 +350,9 @@
                             </div>-->
                             
                             <div class="col-xs-12">
-                                <h2>This page is for some more classic references which I think serve as good background material for people who are relatively new to these areas. I have not read the books mentioned here completely but the parts I read have helped in my understanding considerably. As before, these are just references that I came across and found useful and by no means is a comprehensive list. </h2>
+                                <h2>This page is for some more classic references which I think serve as good background material for people who are relatively new to these areas. I have not read the books mentioned here completely but the parts I read have helped in my understanding considerably. I should mention that these are just references that I came across and found useful and by no means is a comprehensive list. </h2>
 
-                                Under construction
+                                I will also add a page on more recent developments in some of these areas soon along with my (currently rather unpolished) notes on real-stability and hyperbolicity which are under preparation.
                             </div>
 
 
@@ -417,32 +419,34 @@
                                         <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
                                         <li role="presentation" class="active"><a href="#cvx_content" role="tab" data-toggle="tab" aria-expanded="false">Convex Optimization</a>
                                             </li>
-                                            <li role="presentation" class=""><a href="#ml_content"  role="tab" data-toggle="tab" aria-expanded="true">Functional Analysis</a>
+                                            <li role="presentation" class=""><a href="#poly_content"  role="tab" data-toggle="tab" aria-expanded="true">Real-stability, hyperbolicity and beyond</a>
                                             </li>
-                                            <li role="presentation" class=""><a href="#online_content" role="tab"  data-toggle="tab"  aria-expanded="false">(Numerical) Linear Algebra</a>
+                                            <li role="presentation" class=""><a href="#nla_content" role="tab"  data-toggle="tab"  aria-expanded="false">(Numerical) Linear Algebra</a>
                                             </li>
                                             
-                                            <li role="presentation" class=""><a href="#discrete_content" role="tab" data-toggle="tab" aria-expanded="false">Discrete/Combinatorial Optimization</a>
+                                            <li role="presentation" class=""><a href="#sgt_content" role="tab" data-toggle="tab" aria-expanded="false">Spectral Graph Theory</a>
                                             </li>
                                         </ul>
                                         <div id="myTabContent" class="tab-content">
-                                            <div role="tabpanel" class="tab-pane " id="ml_content">
-                                                <p> Functional Analysis Coming Soon</p>
-                                            </div>
-                                            <div role="tabpanel" class="tab-pane fade" id="online_content" >
-                                                <p>(Numerical) Linear Algebra Coming Soon</p>
-                                            </div>
                                             <div role="tabpanel" class="tab-pane fade active in" id="cvx_content" >
                                                 <ul><li><b>S. Boyd and L. Vandenberghe. Convex Optimization.</b> This is a really good book and I would recommend this book as the first reference to anyone who wants to enter the field of ML and Convex Optimation. An even better thing is that this book is available free of cost <a href="https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf">here</a>.</li>
                                                 <li><b>A. Ben-Tal and A. Nemirovski. Lectures on Modern Convex Optimization</b>. This is a book I would recommend to more advanced readers. It contains a beautiful rigorous treatment of Conic (Qadratic) programming, SDPs and interior point methods along with other methods. This book is also available free of cost <a href="http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf">here</a>.</li>
                                                 <li><b>Y. Nesterov. Introductory Lectures on Convex Programming. Volume I: Basic course. </b> This book like the one above it is yet another which deals with the subject of convex optimization with considerable rigor. Available for free <a href="http://www.datascienceassn.org/sites/default/files/Introductory%20Lectures%20on%20Convex%20Optimization%20-%20Nesterov.pdf">here</a></li>
                                                 <li><b>S. Bubeck. Convex Optimization : Algorithms and Complexity </b> This book is written from a more machine learning perspective while being faithful to the classical theory and also includes a topic of much recent interest - stochastic methods. I also found it useful to understand Frank-Wolfe and the cutting plane method. Available for free <a href="http://research.microsoft.com/en-us/um/people/sebubeck/Bubeck15.pdf">here</a></li>
-                                                <li><b>Convex Optimization course by Geoff Gordon and Ryan Tibshirani at CMU</b>. The  video lectures have also been very helpful. Link to a newer offering of the course is <a href="http://www.stat.cmu.edu/~ryantibs/convexopt/">here</a>.</li>
+                                                <li><b>Convex Optimization course by Ryan Tibshirani and Javier Pena at CMU</b>. The  video lectures have also been very helpful. Link to a course offering is available <a href="http://www.stat.cmu.edu/~ryantibs/convexopt/">here</a>.</li>
                                                 <li><b>Serge Lang. Linear Algebra, Third Edition.  Springer's Undergraduate Texts in Mathematics Series</b>. While not Convex Optimization specifically, I think this is an excellent text for Linear Algebra which is a very useful tool.</li>
                                                 </ul>
                                             </div>
-                                            <div role="tabpanel" class="tab-pane fade " id="discrete_content" >
-                                                <p>Discrete/Combinatorial Optimization Coming Soon</p>
+                                            <div role="tabpanel" class="tab-pane fade" id="poly_content">
+                                                <p> Coming Soon</p>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane fade" id="nla_content" >
+                                            I will add more references soon but I think Woodruff's survey is pretty comprehensive.
+                                                <ul><li><b>D.P. Woodruff. Sketching as a Tool for Numerical Linear Algebra.</b> A freely downloadable copy is available <a href="http://researcher.watson.ibm.com/researcher/files/us-dpwoodru/wNow3.pdf">here</a>.</li>
+                                                </ul>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane fade" id="sgt_content" >
+                                                <p>Spectral Graph Theory Coming Soon</p>
                                             </div>
                                             
                                         </div>
